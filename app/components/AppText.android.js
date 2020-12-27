@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-	View,
-	Text,
-	StyleSheet,
-} from 'react-native';
+import { Text, StyleSheet } from 'react-native';
 
 const AppText = (props) => {
 	return (
