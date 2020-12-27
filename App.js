@@ -6,19 +6,29 @@ import {
 	StyleSheet,
 } from 'react-native';
 
-import { MaterialCommunityIcons } from '@expo/vector-icons';
-
-import AppText from './app/components/AppText.android';
-import AppButton from './app/components/AppButton';
-
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen';
+
+import Card from './app/components/Card';
 
 export default function App() {
 	return (
 		<>
 			<StatusBar hidden />
-			<WelcomeScreen />
+			<View
+				style={{
+					backgroundColor: '#F0F8FF',
+					padding: 20,
+					paddingTop: 100,
+					flex: 1,
+				}}
+			>
+				<Card
+					title='Red jacket for sale'
+					subTitle='$100'
+					image={require('./app/assets/jacket.jpg')}
+				/>
+			</View>
 		</>
 	);
 }

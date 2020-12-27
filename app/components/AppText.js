@@ -3,7 +3,7 @@ import { Text, StyleSheet } from 'react-native';
 
 const AppText = (props) => {
 	return (
-		<Text style={styles.text}>
+		<Text style={[styles.text, props.style]}>
 			{props.children}
 		</Text>
 	);
@@ -11,7 +11,7 @@ const AppText = (props) => {
 
 const styles = StyleSheet.create({
 	text: {
-		fontSize: 40,
+		fontSize: 18,
 		fontFamily: 'Roboto',
 	},
 });

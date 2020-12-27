@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
 	},
 	tagLine: {
 		fontSize: 25,
-		fontWeight: 600,
+		fontWeight: 'bold',
 		paddingVertical: 20,
 	},
 });
